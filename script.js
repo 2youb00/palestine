@@ -1,3 +1,5 @@
+let wrongpassword=0;
+
 //-------------rember me----------------
 window.onload = function() {
     console.log(3); 
@@ -50,7 +52,7 @@ function register() {
 }
 
   
-
+ //-------saving data----------------
     function registerdata() {
         var firstNamereg= document.querySelector('input[placeholder="Firstname"]');
         var lastNamereg = document.querySelector('input[placeholder="Lastname"]');
@@ -89,38 +91,34 @@ function register() {
         }
     }
     function logindata() {
-        var emaillog = document.querySelector('#emaillog');
-        var passwordlog = document.querySelector("#passwordlog");
-        console.log(localStorage.Email);
-        console.log(emaillog.value);
-        console.log(3);
+        let emaillog = document.querySelector('#emaillog');
+        let passwordlog = document.querySelector("#passwordlog");
+        
         if(localStorage.Email==emaillog.value){
             emaillog.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
-            console.log(4);
             if(localStorage.Password==passwordlog.value){
-                console.log(5);
-                
-                console.log(6);
-                window.location.href = "home.html";
-                console.log(7);
-
-                
+                window.location.href = "home.html";  
                 passwordlog.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
-            console.log(5);
-
             }
-            else{
-                passwordlog.style.backgroundColor = "rgba(255, 0, 0, 0.3)";}}
+            else{passwordlog.value='';
+                passwordlog.style.backgroundColor = "rgba(255, 0, 0, 0.3)";wrongpassword++;}}
         else if(!localStorage.email || localStorage.email!=emaillog.value){
             emaillog.value='';
             emaillog.style.backgroundColor = "rgba(255, 0, 0, 0.3)";
         }
+        //----rember me-----------
         if(document.querySelector("#login-check").checked){
             localStorage.remberme=true;
+        }
+        //---- wrong password-----
+        if(wrongpassword==3){
+
+            passwordlog.placeholder="try again later...";
+            passwordlog.readOnly=true;
         }
     
     }
 
-    //-------saving data----------------
+   
 
 //---------------localstorage-----------------------
