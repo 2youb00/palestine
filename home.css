@@ -1,0 +1,48 @@
+body{
+    background: white !important;
+    position: relative;
+    overflow-y: scroll !important;;
+}
+.main-container{
+    background: white !important;
+}
+.home-bg{
+    background-image: url("img/B3A0343.jpg");
+    width: 100vw;
+    height: 80vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position-y: -150px;
+}
+
+.bg-btn{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 20px;
+    /*background: rgba(39, 39, 39, 0.4);*/
+}
+.home-bg .donation ,.zakat{
+background-color: rgba(255, 255, 255, 0.83);
+color: #00adee;
+ width: 400px;
+ height: 70px;
+ padding: 20px 0;
+ margin-right: 25px;
+ font-size: 22px;
+ font-weight: 300;
+ text-align: center;
+ cursor: pointer;
+ text-decoration: none;
+}
+.discription{
+    position: relative;
+    top: 38vh;
+    margin: 0 50px;
+}

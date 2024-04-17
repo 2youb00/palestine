@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="services.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main-container">
+    <nav class="nav">
+        <div class="nav-logo">
+            <a href="home.html" class="logo"><img src="img/palestine_chronicle_new_logo.png" alt="" width="150px"></a>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="home.html" class="link">Home</a></li>
+                <li><a href="#" class="link">Blog</a></li>
+                <li><a href="#" class="link active">Services</a></li>
+                <li><a href="#" class="link">About</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button type="button" class="btn white-btn" onclick="logout()">log out</button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+    <main class="services-main">
+        <section class="discription">
+            <h1>Dedicate Your Sadaqah for Gaza</h1>
+            <h3>Share the Blessings of Your Sadaqah</h3>
+            <p>The power of your Sadaqah fosters a sense of solidarity and compassion among believers. 
+                Your Sadaqah sends life-saving aid to families in Gaza who are on the
+                 brink of starvation.</p>
+            <p>Giving Sadaqah not only brings you closer to Allah Almighty but 
+                also brings a glimmer of hope and relief to the lives of Palestine 
+                refugees who endure tremendous hardships</p>
+            
+        </section>
+        <section class="donation">
+            <div class="donation-container">
+                <div class="donation-type-container">
+                    <div class="donation-type"><h3>donation</h3></div>
+                </div>
+                <div class="amount-container">
+                <div class="amount">
+                    <p>1000 DZD</p>
+                </div>
+                <div class="amount">
+                    <p>5000 DZD</p>
+                </div>
+                <div class="amount">
+                    <p>7000 DZD</p>
+                </div>
+                <div class="amount">
+                    <p>12000 DZD</p>
+                </div>
+                <div class="amount">
+                    <p>17000 DZD</p>
+                </div>
+                <div class="amount">
+                    <p>30000 DZD</p>
+                </div>
+            </div>
+            <div class="other-amount">
+                <p>choose othe amount :</p>
+                <input type="number" placeholder="other amout" required>
+                <p class="curnty">DZD</p>
+            </div>
+            <div class="donor-info">
+                <p>First name : <span></span></p>
+                <p>Last name : <span></span><br></p>
+                <p>Email : <span></span><br></p>
+            </div>
+            <div class="donate-by-contaner">
+                <div class="donate-by">
+                    <p>donate by card</p>
+                    <i class='bx bxs-credit-card'></i>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+</main>
+
+
+
+
+    <style>
+        /* إخفاء السهم الجانبي في مربع النص الرقمي */
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        </style>
+    <script  src="services.js"></script>
+    
+</body>
+</html>

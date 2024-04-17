@@ -1,11 +1,12 @@
 let wrongpassword=0;
 
+
 //-------------rember me----------------
 window.onload = function() {
     console.log(3); 
     console.log(localStorage.getItem("remberme"));
 
-    if(localStorage.getItem("remberme") === "true") { // Compare to the string "true"
+    if(localStorage.getItem("remberme") === "true") { 
         console.log(4); 
         window.location.href = "home.html"; 
     }
@@ -99,16 +100,16 @@ function register() {
             if(localStorage.Password==passwordlog.value){
                 window.location.href = "home.html";  
                 passwordlog.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+                   //----rember me -----------
+            if(document.querySelector("#login-check").checked){
+                localStorage.remberme=true;
+                }
             }
             else{passwordlog.value='';
                 passwordlog.style.backgroundColor = "rgba(255, 0, 0, 0.3)";wrongpassword++;}}
         else if(!localStorage.email || localStorage.email!=emaillog.value){
             emaillog.value='';
             emaillog.style.backgroundColor = "rgba(255, 0, 0, 0.3)";
-        }
-        //----rember me-----------
-        if(document.querySelector("#login-check").checked){
-            localStorage.remberme=true;
         }
         //---- wrong password-----
         if(wrongpassword==3){

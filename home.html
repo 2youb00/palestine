@@ -3,12 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/icon.png">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <title>home</title>
 </head>
 <body>
-    <h1 class="welcom">hi <span></span></h1>
-    <button type="button" onclick="logout()">log out</button>
-    <script  src="home.js"></script>
+    <main class="main-container">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="home.html" class="logo"><img src="img/palestine_chronicle_new_logo.png" alt="" width="150px"></a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#" class="link active">Home</a></li>
+                    <li><a href="#" class="link">Blog</a></li>
+                    <li><a href="services.html" class="link">Services</a></li>
+                    <li><a href="#" class="link">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button type="button" class="btn white-btn" onclick="logout()">log out</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+        <main class="home-main">
+            <div class="home-bg">
+                <div class="bg-btn">
+                    <a class="donation" href="services.html"><p>Donation</p></a>
+                    <div class="zakat"><p>Zakat</p></div>
+                </div>
+            </div>
+            <div class="discription">
+                <h1>Your Zakat, a lifeline for Gaza </h1>
+                <p>Today, bring your sense of solidarity and compassion to life by 
+                    supporting Palestine Refugees and displaced people across the region. 
+                    Give now and provide vital food and cash assistance to thousands of families
+                     in dire need. </p>
+            </div>
+        </main>
+        
+    
+    </main>
+    <script src="services.js"></script>
 </body>
 </html>
