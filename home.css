@@ -1,16 +1,20 @@
+
+
 body{
     background: white !important;
     position: relative;
     overflow-y: scroll !important;;
+    overflow-y: hidden;
 }
 .main-container{
     background: white !important;
 }
-.home-bg{
-    background-image: url("img/B3A0343.jpg");
+.home-bg {
+    background-image: url("img/gazafoodassistance500.jpg");
+    animation: changeBackground 100s infinite steps(1);
     width: 100vw;
     height: 80vh;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
@@ -18,6 +22,19 @@ body{
     background-position-y: -150px;
 }
 
+@keyframes changeBackground {
+    0% { background-image: url("img/cMG9828.jpg"); }
+    25% { background-image: url("img/ds\ revrse.jpg"); }
+    50% { background-image: url("img/nn.jpg"); }
+    75% { background-image: url("img/gfff.jpg"); }
+    100% { background-image: url("img/01A8209.jpg"); }
+}
+
+.discription{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
 .bg-btn{
     width: 100%;
     height: 100%;
@@ -45,4 +62,94 @@ color: #00adee;
     position: relative;
     top: 38vh;
     margin: 0 50px;
+}
+/*/-----------card/*/
+.card-container{
+    position: absolute;
+    top: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    gap: 30px;
+}
+.card{
+    text-decoration: none;
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+.card-had{
+    background-color: #00adee;
+    padding: 20px 0;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;  margin-bottom: -9px;
+}
+.card-footer{
+    border: 0.2px solid #999 !important;
+padding: 10px 15px ;
+height: 85px;
+overflow: hidden;
+color: #373636;
+font-size: 15px;
+
+}
+
+/* footer8*/
+.donation-footer {
+    position: absolute;
+    width: 100vw;
+    bottom: -700px;
+}
+
+
+@media only screen and (max-width: 540px) {
+    .bg-btn{
+        align-items: center;
+
+    }
+    .home-bg .donation ,.zakat{
+        width: 370px;
+        }
+        .discription{
+            position: relative;
+            top: 25vh;
+            margin: 0 30px;
+        }
+        .card-container{
+            margin-top: -100px;
+            display: flex;
+            flex-direction: column;
+        }
+        .donation-footer{
+    bottom: -1000px;
+            
+        }
+        .home-bg {
+            background-image: url("img/gazagmr.jpg");
+            animation: none;
+            width: 100vw;
+            height: 80vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-position-y: -150px;
+        }
+        
 }

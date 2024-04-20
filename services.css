@@ -143,7 +143,7 @@ margin: 15px 0;
     gap: 10px;
     margin-left: 10px;
 }
-.donate-by-contaner{
+.donate-by-contaner,.conform-donate-conatiner{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -151,7 +151,7 @@ margin: 15px 0;
     flex-direction: column;
     margin-top: 20px;
 }
-.donate-by{
+.donate-by,.conform-donate{
     position: relative;
     width: 90%;
     border: 1px solid #00adee;
@@ -170,6 +170,94 @@ right: 3%;
 top: 16%;
 font-size: 30px;
 }
+.click-blue-bg{
+    background-color: #00adee !important;
+    color: white !important;
+}
+/**           card pay   /*/
+.conform-pay-card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.247) !important;
+    z-index: 100;
+    position: fixed;
+}
+
+.pay-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    justify-content:space-around;
+}
+
+.pay-container h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.pay-container h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+.first-row{
+     display: flex;
+}
+
+.owner{
+    width: 100%;
+    margin-right: 40px;
+}
+
+.input-card input{
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 15px;
+    border: 1px solid #999;
+    outline: none;
+    border-radius: 5px;
+}
+
+.selection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selection select{
+    padding: 10px 20px;
+}
+
+.cards img{
+    width: 70px;
+}
+.close{
+    display: flex;
+    justify-content: end;
+   
+}
+
+.close i{
+    cursor: pointer;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+.close i:hover{
+color: red;
+}
+.pay-erore{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 15px ;
+    color: rgb(255, 47, 47);
+}
 /*/    responsive             */
 @media only screen and (max-width: 768px){
     .services-main{
@@ -185,5 +273,9 @@ font-size: 30px;
 @media only screen and (max-width:540px){
     body{
         background-position:-400px;
+    }
+    .pay-container{
+        position: absolute;
+        width: 90%;
     }
 }

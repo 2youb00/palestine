@@ -1,0 +1,41 @@
+/*/      cvvvvvvvvvvvvvvvvvvvv footer         */
+
+.donation-footer {
+    background-color: #00adee;
+    padding: 20px 0;
+    text-align: center;
+    width: 100vw;
+    color: white !important;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.donation-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.donation-info p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.btn-donate {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: white;
+    color: #00adee;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-donate:hover {
+    background-color: whitesmoke;
+}

@@ -47,3 +47,35 @@ window.addEventListener('scroll', function() {
         document.querySelector(".nav").classList.remove("nav-blur");
     }
 });
+///----------------click  blue bg---------------
+function blue(btn){
+    btn.classList.toggle("click-blue-bg");
+};
+/// -------------close---------------
+
+function closeconf(){
+    document.querySelector(".conform-pay-card").classList.add("displaynone");
+    document.querySelector(".click-blue-bg").classList.remove("click-blue-bg");
+    document.querySelector(".conform-donate p").innerHTML="donate ";
+    
+};
+function openconf(){
+    if(document.querySelector(".choose")){
+        console.log("Please select");
+    document.querySelector(".conform-pay-card").classList.remove("displaynone"); 
+    document.querySelector(".conform-donate p").innerHTML += document.querySelector(".choose p").innerHTML;
+    document.querySelector(".pay-erore").classList.add("displaynone");
+
+    }
+    else if(document.querySelector(".other-amount input").value!=""){
+    document.querySelector(".conform-pay-card").classList.remove("displaynone"); 
+    document.querySelector(".conform-donate p").innerHTML += document.querySelector(".other-amount input").value+" DZD";
+    document.querySelector(".pay-erore").classList.add("displaynone");
+
+
+    }
+    else{
+        document.querySelector(".pay-erore").classList.remove("displaynone");
+    }
+    // || 
+};
