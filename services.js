@@ -8,6 +8,15 @@ function myMenuFunction() {
         i.className = "nav-menu";
     }
    }
+   //----------------------scrool---------------------
+   window.addEventListener('scroll', function() {
+    if (window.scrollY > 38 && window.innerWidth > 700) {
+        document.querySelector(".nav").classList.add("nav-blur");
+    }
+    else {
+        document.querySelector(".nav").classList.remove("nav-blur");
+    }
+});
 //-----------------log out------------
 function logout(){
     localStorage.remberme=false;
@@ -39,14 +48,7 @@ document.querySelector(".donor-info p:nth-child(1) span").innerHTML=localStorage
 document.querySelector(".donor-info p:nth-child(2) span").innerHTML=localStorage.lastname;
 document.querySelector(".donor-info p:nth-child(3) span").innerHTML=localStorage.Email;
 //#72b1dc
-window.addEventListener('scroll', function() {
-    if (window.scrollY > 38) {
-        document.querySelector(".nav").classList.add("nav-blur");
-    }
-    else {
-        document.querySelector(".nav").classList.remove("nav-blur");
-    }
-});
+
 ///----------------click  blue bg---------------
 function blue(btn){
     btn.classList.toggle("click-blue-bg");
