@@ -115,7 +115,10 @@ font-size: 15px;
     width: 100vw;
     bottom: -700px;
 }
-
+.nav-blur{
+    background-color: #ffffff33;
+    backdrop-filter: blur(5px);
+}
 
 @media only screen and (max-width: 540px) {
     .bg-btn{

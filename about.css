@@ -1,0 +1,39 @@
+body{
+    background: white !important;
+    position: relative;
+    overflow-y: scroll !important;;
+    overflow-y: hidden;
+}
+.nav-blur{
+    background-color: #ffffff33;
+    backdrop-filter: blur(5px);
+}
+.main-container{
+    background: white !important;
+}
+#about-section {
+    padding: 50px 0;
+}
+
+.container-about {
+    width: 80%;
+    margin: auto;
+}
+
+.container-about h2 {
+    margin: 50px 0;
+    text-align: center;
+}
+.container-about .vid-cont{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.container-about p {
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 540px) {
+    .vid-cont iframe{
+        width: 330px;
+        height: 250px;
+    }
+}
